@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1 maxium-scale=1 ,user-scalable=no" charset="UTF-8">
+    <title>专题</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/zt2.css">
+    <link rel="stylesheet" href="../css/zt4.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <img src="../img/logo_tkp.png" alt="" style="margin-top: 10px">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#navBody">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navBody">
+        <ul class="nav navbar-nav" style="margin-left: 100px">
+            <li><a href="../html/首页.html" style="font-size: 20px">
+                <span class="glyphicon glyphicon-home" style="font-size: 20px"></span>首页</a></li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-globe" style="font-size: 20px"></span>新闻</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/新闻.html"><span class="glyphicon glyphicon-list-alt"></span>国内新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>香港新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>两岸新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>国际新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>军事新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>大公访谈</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-comment" style="font-size: 20px"></span>评论</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/评论.html"><span class="glyphicon glyphicon-list-alt"></span>社会评论</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>北京观察</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>隔海观澜</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>纵横谈</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>军事新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>大公访谈</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-facetime-video" style="font-size: 20px"></span>影像</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/影像.html"><span class="glyphicon glyphicon-list-alt"></span>大公视频</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>浮世荟</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>遇见</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>大公图片故事</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>财经</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/财经.html"><span class="glyphicon glyphicon-list-alt"></span>中国经济</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>香港财经</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>港股</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>国际经济</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>经济观察室</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-send" style="font-size: 20px"></span>艺文</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/艺文.html"><span class="glyphicon glyphicon-list-alt"></span>大公园</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>小公园</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>书海漫游</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>艺术赏析</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>汲宝斋</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>有料历史</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-credit-card" style="font-size: 20px"></span>生活</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/生活.html"><span class="glyphicon glyphicon-list-alt"></span>娱乐</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>体育</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>养生堂</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>遨游</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>电影</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>3C科技</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>驰骋</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li style="margin-left: 20px"><a href="../html/专题.html" style="font-size: 20px"><span class="glyphicon glyphicon-comment" style="font-size: 20px"></span>专题</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<div class="container">
+    <div class="one">
+        <div class="one-1">
+            <div class="box"></div>
+        </div>
+        <div class="one-2">
+            <h3>热点专题</h3>
+        </div>
+    </div>
+</div>
+
+
+<div id="slider">
+    <!--轮播图片-->
+    <ul class="slider-img">
+        <li class="show"><img src="../img/sh38.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh43.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh37.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh39.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh40.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh44.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh46.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh54.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh53.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh52.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh60.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh59.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh58.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh56.jpg" alt=""></li>
+        <li class="show"><img src="../img/sh66.jpg" alt=""></li>
+    </ul>
+    <!--轮播小圆点-->
+    <ul class="slider-btn">
+        <li class="on"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!--左右按钮-->
+    <a class="prev" href="javascript:"></a><!--向左走按钮-->
+    <a class="next" href="javascript:"></a><!--向右走按钮-->
+</div>
+<script>
+    /*1、获取操控轮播图片*/
+    var img = document.getElementsByClassName("slider-img")[0].getElementsByTagName("li");
+    console.log(img);
+    /*2、获取小圆点*/
+    var btn = document.getElementsByClassName("slider-btn")[0].getElementsByTagName("li");
+    console.log(btn);
+    /*3、上一个，下一个按钮*/
+    var prev = document.getElementsByClassName("prev")[0];
+    var next = document.getElementsByClassName("next")[0];
+    /*声明默认起始下标*/
+    var number = 0;
+    /*声明一个定时器*/
+    var timer = null;
+    /*单独声明一个函数存放设置图片属性*/
+    function mover(num) {
+        for(var c=0;c<btn.length;c++){
+            img[c].className = "";
+            btn[c].className = "";
+        }
+        img[num].className = "show";
+        btn[num].className = "on";
+    }
+    /*给每个小圆点for循环添加点击事件*/
+    for(var i=0;i<btn.length;i++){
+        myDot = btn[i];
+        myDot.index = i;
+        myDot.onclick = function (){
+            number = this.index;
+            mover(number);
+        }
+    }
+    /*给下一个添加点击事件*/
+    next.onclick = function () {
+        number++;
+        if(number >= img.length){
+            number = 0;
+        }
+        mover(number);
+    };
+    /*给上一个按钮添加点击事件*/
+    prev.onclick = function () {
+        number--;
+        if (number < 0 ){
+            number=img.length-1;
+        }
+        mover(number);
+    };
+    /*定时器*/
+    timer = setInterval(function () {
+        number++;
+        if(number >= img.length){
+            number = 0;
+        }
+        mover(number)
+    },3000);
+    /*鼠标移出移出封装函数使用*/
+    function moverOver(list){
+        for(var d=0;d<list.length;d++){
+            /*鼠标移入事件*/
+            list[d].onmouseover = function () {
+                clearInterval(timer);/*停止定时器*/
+            };
+            /*鼠标移出事件*/
+            list[d].onmouseout = function () {
+                timer = setInterval(function () {
+                    number++;
+                    if(number >= img.length){
+                        number = 0;
+                    }
+                    mover(number)
+                },3000);
+            }
+        }
+    }
+    moverOver([document.getElementsByClassName("slider-btn")[0],prev,next]);
+</script>
+
+
+
+
+
+
+<div class="container">
+    <div class="one">
+        <div class="one-1">
+            <div class="box1"></div>
+        </div>
+        <div class="one-2">
+            <h3>事件</h3>
+        </div>
+        <div class="one-3">
+            <p><a href="">更多></a></p>
+        </div>
+    </div>
+
+
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh36.jpg" alt="" class="img1 img-responsive">
+            <div class="zp caption">
+                <a href="#">第二届“海港论坛”</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh45.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">林郑月娥发表首份施政报告</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh55.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">2017香港青年音乐节</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh57.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">纪念香港回归20周年法律研讨会</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="one">
+        <div class="one-1">
+            <div class="box1"></div>
+        </div>
+        <div class="one-2">
+            <h3>策划</h3>
+        </div>
+        <div class="one-3">
+            <p><a href="">更多></a></p>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh49.jpg" alt="" class="img1 img-responsive">
+            <div class="zp caption">
+                <a href="#">港青追梦 逐鹿神州</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh48.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">2017香港金紫荆国际金融周</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh51.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">香港（屯门）国际半程马拉松直</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh61.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">铁肩担道义 键笔为家国</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="one">
+        <div class="one-1">
+            <div class="box1"></div>
+        </div>
+        <div class="one-2">
+            <h3>文体</h3>
+        </div>
+        <div class="one-3">
+            <p><a href="">更多></a></p>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh35.jpg" alt="" class="img1 img-responsive">
+            <div class="zp caption">
+                <a href="#">中国长白山国际林海雪地马拉松</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh47.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">中澳文化艺术之夜</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh62.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">预警夏季马拉松参赛和训练</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh63.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">全运会马拉松选手爬过终点无人</a>
+            </div>
+        </div>
+    </div>
+    <div class="one">
+        <div class="one-1">
+            <div class="box1"></div>
+        </div>
+        <div class="one-2">
+            <h3>佛教</h3>
+        </div>
+        <div class="one-3">
+            <p><a href="">更多></a></p>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh69.jpg" alt="" class="img1 img-responsive">
+            <div class="zp caption">
+                <a href="#">盛世玄奘大型纪实图片展</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh70.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">净慧长老示寂三周年追思纪念</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh1.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">纯一法师谈素食文化</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh2.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">博山文化论坛圆桌会议</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="one">
+        <div class="one-1">
+            <div class="box1"></div>
+        </div>
+        <div class="one-2">
+            <h3>政府</h3>
+        </div>
+        <div class="one-3">
+            <p><a href="">更多></a></p>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh42.jpg" alt="" class="img1 img-responsive">
+            <div class="zp caption">
+                <a href="#">老家河南</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh64.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">2017北京国际服务贸易交易会</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh65.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">聚焦“一带一路”国际合作论坛</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh3.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">2016年第四届京交会</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="one">
+        <div class="one-1">
+            <div class="box1"></div>
+        </div>
+        <div class="one-2">
+            <h3>企业</h3>
+        </div>
+        <div class="one-3">
+            <p><a href="">更多></a></p>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh50.jpg" alt="" class="img1 img-responsive">
+            <div class="zp caption">
+                <a href="#">金紫荆北京汽车专题</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh67.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">大公·美宅之碧桂园·森林城市</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh41.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">港华燃气:产业绿色化商社宜共生</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="margin-top: 20px">
+            <img src="../img/sh68.jpg" alt="" class="img-responsive">
+            <div class="zp caption">
+                <a href="#">TCL轻奢一族·有故事</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <a href="#">关于我们&nbsp; |</a>
+        <a href="#">网站声明&nbsp; |</a>
+        <a href="#">举报投诉须知&nbsp; |</a>
+        <a href="#">诚聘英才&nbsp; |</a>
+        <a href="#">友情链接&nbsp; |</a>
+        <a href="#">联系我们&nbsp; |</a>
+        <a href="#">广告服务&nbsp; |</a>
+        <a href="#">网站地图&nbsp; |</a>
+        <a href="#">京ICP备13049349号&nbsp; |</a>
+        <a href="#">京公网安备11010102000014号&nbsp;</a>
+        <p>承印商名称：三友印务有限公司 地址：香港田湾海旁道7号兴伟中心2-3楼</p>
+        <p>Copyright 2012 - 2018 Takungpao All Rights Reserved</p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,513 @@
+.title {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+}
+.title-top {
+  height: 4px;
+  background: #c9a063;
+}
+.title-down {
+  height: 76px;
+}
+.title-down-R {
+  width: 250px;
+  height: 76px;
+  float: left;
+}
+.title-down-R img {
+  margin: 20px 60px;
+  height: 30px;
+  width: 120px;
+}
+.title-down-C {
+  width: 750px;
+  height: 76px;
+  float: left;
+}
+.title-down-C ul {
+  height: 76px;
+}
+.title-down-C ul li :hover {
+  color: #c9a063;
+}
+.title-down-C ul li a {
+  text-align: center;
+  line-height: 40px;
+  width: 90px;
+  height: 76px;
+  font-size: 16px;
+  color: #000000;
+}
+.title-down-C ul li p {
+  width: 250px;
+}
+.title-down-C ul li p span {
+  margin-left: 10px;
+}
+.title-down-C ul li p span a {
+  font-size: 15px;
+}
+.title-down-L {
+  width: 300px;
+  float: left;
+  height: 76px;
+}
+.title-down-L .Lp1 {
+  width: 160px;
+  height: 76px;
+  float: left;
+}
+.title-down-L .Lp1 .p-t {
+  font-size: 12px;
+  color: darkgray;
+  margin: 15px 0 0 10px;
+}
+.title-down-L .Lp1 .p-d {
+  font-size: 12px;
+  margin: 1px 0 0 10px;
+}
+.title-down-L .Lp1 .p-d a {
+  margin-right: 5px;
+  color: grey;
+  text-decoration: none;
+}
+.title-down-L .Lp1 .p-d :hover {
+  color: #c9a063;
+}
+.title-down-L .Lp2 {
+  width: 40px;
+  height: 76px;
+  float: left;
+}
+.title-down-L .Lp2 img {
+  width: 83px;
+  height: 38px;
+  margin: 17px 2px;
+}
+.content {
+  background: #f1f1f1;
+  width: 100%;
+}
+.top {
+  width: 90%;
+  margin: 0 auto;
+  height: 40px;
+}
+.top .p1 {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #c9a063;
+  float: left;
+}
+.top .p2 {
+  margin: 11px 8px;
+  float: left;
+  font-size: 14px;
+}
+.top .p3 {
+  margin: 11px 8px;
+  float: left;
+  color: grey;
+  font-size: 14px;
+}
+.center {
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  margin: 0 auto;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+body,
+html {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+.slider-img {
+  height: 480px;
+  position: relative;
+}
+.slider-img > li {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all ease-out 0.4s;
+}
+.slider-img > li > img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  float: left;
+  height: 100%;
+}
+.slider-img > li > div {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  float: left;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.slider-img > li > div .p1 {
+  margin: 20px 0 0 90px;
+  width: 220px;
+  height: 150px;
+  font-size: 24px;
+  color: white;
+  text-align: left;
+}
+.slider-img > li > div .p2 {
+  margin: 10px 0 0 90px;
+  width: 220px;
+  font-size: 15px;
+  height: 180px;
+  color: white;
+  text-align: left;
+}
+.slider-img > li > div .p3 {
+  margin: 10px 0 0 90px;
+  width: 30px;
+  font-size: 15px;
+  color: white;
+  text-align: left;
+}
+.slider-img > .show {
+  opacity: 1;
+}
+.slider-btn {
+  position: absolute;
+  margin: -50px 0 0 70%;
+  text-align: center;
+}
+.slider-btn > li {
+  display: inline-block;
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  margin-left: 20px;
+  border: 1px solid silver;
+  color: white;
+  cursor: pointer;
+  /*将鼠标放入的指针样式改为小手*/
+}
+.slider-btn > .on {
+  background: white;
+}
+.prev,
+.next {
+  width: 60px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  margin-top: -40px;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all ease 0.3s;
+}
+.prev {
+  left: -60px;
+}
+.next {
+  right: -60px;
+}
+.banner:hover .prev {
+  left: 0;
+}
+.banner:hover .next {
+  right: 0;
+}
+.content02 {
+  width: 100%;
+  background: #f1f1f1;
+  padding-top: 20px ;
+  height: 290px;
+}
+#allocator {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+#allocator > ul {
+  width: 2820px;
+  transition: .8s;
+}
+#allocator > ul > li {
+  display: inline-block;
+  /*position: relative;*/
+}
+#allocator > ul > li > img {
+  width: 380px;
+  height: 200px;
+}
+#allocator > ul > li > p {
+  /*position: absolute;*/
+  /*left: 200px;*/
+  margin-left: 60px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+#allocator > ul > li > p > a {
+  transition: all ease 0.3s;
+  color: #000000;
+  text-decoration: none;
+}
+#allocator > ul > li > p > a:hover {
+  color: #c9a063;
+}
+#pointSelect {
+  position: absolute;
+}
+#pointSelect > li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  transition: .5s;
+  cursor: pointer;
+}
+#leftSelect {
+  position: absolute;
+  width: 80px;
+  /*background-color: yellow;*/
+  font-size: 70px;
+  left: 80px;
+  color: #c9a063;
+  top: 11%;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+#rightSelect {
+  position: absolute;
+  width: 80px;
+  /*background-color: yellow;*/
+  font-size: 70px;
+  right: -5px;
+  top: 11%;
+  color: #c9a063;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+#leftSelect:hover {
+  color: white;
+}
+#rightSelect:hover {
+  color: white;
+}
+.sY2-t {
+  height: 20px;
+  width: 50px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.sY2-t a {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+.sY2-t :hover {
+  color: #c9a063;
+}
+.sY2 {
+  background: white;
+  border-bottom: 2px solid #f1f1f1;
+  padding: 12px;
+}
+.sY2-2 {
+  padding: 12px;
+}
+.sY2-3 {
+  padding: 12px;
+}
+.sY2 img:hover {
+  transform: scale(1.05);
+  transition: all 1.5s;
+}
+.sY2 div > h4:hover {
+  color: #c9a063;
+}
+.sY2 div > p {
+  color: dimgrey;
+}
+.sY2-p {
+  color: gray;
+}
+.sY2-p a {
+  color: gray;
+}
+.sY2-p :hover {
+  color: #c9a063;
+}
+.left-img {
+  width: 380px;
+  height: 240px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.left-img img {
+  width: 380px;
+  height: 240px;
+}
+.left-img :hover {
+  transform: scale(1.05);
+  transition: all 1.5s;
+}
+.p01 {
+  position: absolute;
+  top: 230px;
+  left: 20px;
+  width: 380px;
+  margin-left: 19px;
+  height: 60px;
+  font-size: 18px;
+}
+.p01 p {
+  color: white;
+}
+.p01 :hover {
+  color: #c9a063;
+}
+.sY1 {
+  margin-left: 10px;
+  background: #333333;
+  width: 380px;
+}
+.sY1-1 {
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+.sY1-1 div img {
+  margin: 10px 10px;
+}
+.sY1-1 div :hover {
+  transform: scale(1.05);
+  transition: all 1.5s;
+}
+.sY1-1 div h4 {
+  font-weight: 700;
+  color: white;
+}
+.sY1-1 div p {
+  color: #9d9d9d;
+}
+.sY3 {
+  margin-left: 10px;
+  width: 380px;
+}
+.sY3-1 {
+  background: white;
+}
+.sY3-1-2 {
+  width: 380px;
+  height: 100px;
+  border-bottom: 1px solid #f1f1f1;
+  margin: 10px 10px;
+}
+.sY3-1-2 .p5 {
+  color: gray;
+}
+.sY3-1-2 .p5 p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.sY3-1-2 .p5 :hover {
+  color: #c9a063;
+}
+.sY3-p1 {
+  font-style: italic;
+  font-size: 25px;
+  margin: 7px 18px;
+}
+.sY3-p6 {
+  font-style: italic;
+  font-size: 25px;
+  margin: 7px 18px;
+  color: red;
+}
+.foot {
+  height: 280px;
+  width: 1187px;
+  margin: 30px;
+}
+.content09 {
+  height: 300px;
+  margin-top: 50px;
+}
+.content09-R {
+  height: 300px;
+}
+.content09-R .ul {
+  height: 104px;
+  width: 110px;
+  float: left;
+}
+.content09-R .ul li h4 a {
+  color: black;
+}
+.content09-L {
+  height: 150px;
+  border-left: 1px solid gainsboro;
+}
+.content09-L-t {
+  margin: 9px 20px;
+}
+.content09-L-t p {
+  font-size: 16px;
+}
+.content09-L-d {
+  height: 60px;
+  margin-left: 20px;
+}
+.content09-L-d-1 {
+  height: 50px;
+  width: 120px;
+  float: left;
+  background: url("../img/layout (1).png") no-repeat 0 -50px;
+}
+.content09-L-d-2 {
+  height: 50px;
+  width: 50px;
+  float: left;
+  background: url("../img/layout (1).png") no-repeat -1px -160px;
+}
+.ul-h4 {
+  width: 130px;
+}
+.ul-a a {
+  color: dimgrey;
+}
+.ul-a :hover {
+  color: #c9a063;
+}
+.bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #EEEEEE;
+}
+.bottom a {
+  color: #999999;
+  text-decoration: none;
+}
+.bottom a:hover {
+  color: #C9A063;
+}

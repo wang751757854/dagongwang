@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/shouye.css">
+</head>
+<body>
+<nav class="title">
+    <div class="title-top"></div>
+    <div class="title-down">
+        <div class="title-down-R">
+            <img src="../img/logo_tkp.png" alt="">
+        </div>
+        <div class="title-down-C">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../html/首页.html">
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-toggle " data-toggle="dropdown">
+                            新闻
+                            <span class="caret"></span>
+                        </a>
+                        <p class="dropdown-menu">
+                            <span><a href="新闻.html">新闻</a></span>
+                            <span><a href="">中国</a></span>
+                            <span><a href="">港闻</a></span>
+                            <span><a href="">俩岸<br></a></span>
+                            <span><a href="">国际</a></span>
+                            <span><a href="">军事</a></span>
+                            <span> <a href="">大公访谈</a></span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                            评论
+                            <span class="caret"></span>
+                        </a>
+                        <p class="dropdown-menu">
+                            <span><a href="评论.html">评论</a></span>
+                            <span><a href="">社评</a></span>
+                            <span><a href="">北京观察</a></span>
+                            <span><a href="">隔海观澜<br></a></span>
+                            <span><a href="">纵横谈</a></span>
+                            <span><a href="">点击香江</a></span>
+                            <span><a href="">热点冷评</a><br></span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                            影像
+                            <span class="caret"></span>
+                        </a>
+                        <p class="dropdown-menu">
+                            <span><a href="影像.html">影像</a></span>
+                            <span><a href="">大公视频</a></span>
+                            <span><a href="">浮世荟<br></a></span>
+                            <span><a href="">遇见</a></span>
+                            <span><a href="">大公图片故事</a></span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                            财经
+                            <span class="caret"></span>
+                        </a>
+                        <p class="dropdown-menu">
+                            <span><a href="财经.html">财经</a></span>
+                            <span><a href="">中国经济</a></span>
+                            <span><a href="">香港财经</a></span>
+                            <span><a href="">港股<br></a></span>
+                            <span><a href="">国际经济</a></span>
+                            <span><a href="">经济观察家</a></span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                            艺文
+                            <span class="caret"></span>
+                        </a>
+                        <p class="dropdown-menu">
+                            <span><a href="艺文.html">艺文</a></span>
+                            <span><a href="">大公园</a></span>
+                            <span><a href="">小公园</a></span>
+                            <span><a href="">书海漫游<br></a></span>
+                            <span><a href="">艺术赏析</a></span>
+                            <span><a href="">汲宝斋</a></span>
+                            <span><a href="">有料历史<br></a></span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                            生活
+                            <span class="caret"></span>
+                        </a>
+                        <p class="dropdown-menu">
+                            <span><a href="生活.html">生活</a></span>
+                            <span><a href="">娱乐</a></span>
+                            <span><a href="">体育</a></span>
+                            <span><a href="">养生堂</a></span>
+                            <span><a href="">遨游</a></span>
+                            <span><a href="">电影</a></span>
+                            <span><a href="">3C科技</a></span>
+                            <span><a href="">驰骋</a></span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="专题.html">
+                            专题
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="title-down-L">
+            <div class="Lp1">
+                <p class="p-t">
+                    <script>
+                        var now=new Date();
+                        var year=now.getFullYear();
+                        var month=now.getMonth();
+                        var date=now.getDate();
+                        var day=now.getDay();
+                        var hour=now.getHours();
+                        var minute=now.getMinutes();
+                        var second=now.getSeconds();
+                        switch (day){
+                            case 1:
+                                day="星期一";
+                            case 2:
+                                day="星期二";
+                            case 3:
+                                day="星期三";
+                            case 4:
+                                day="星期四";
+                            case 5:
+                                day="星期五";
+                            case 6:
+                                day="星期六";
+                            case 7:
+                                day="星期日";
+                        }
+                        document.write(year+"年"+(month+1)+"月"+date+"日"+'&nbsp'+day)
+                    </script>
+                </p>
+                <p class="p-d">
+                    <a href="">注册</a>
+                    <a href="">登录</a>
+                    <span style="color: darkgray">&nbsp|&nbsp</span>
+                    <a href="">香港站</a>
+                </p>
+            </div>
+            <div class="Lp2">
+                <img src="../img/epaper.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="content">
+    <div class="top">
+        <p class="p1">
+            <span><i class="glyphicon glyphicon-envelope"></i></span>
+            快讯
+        </p>
+        <p class="p2">习近平抵达日本大阪出席二十国集团领导人第十四次峰会</p>
+        <p class="p3">06-27 13:22</p>
+        <form action="" class="navbar-form navbar-right form-inline">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="输入搜索内容" style="font-size: 10px">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-search"></i>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="center">
+        <div class="banner">
+            <!--轮播图片-->
+            <ul class="slider-img">
+                <li class="show">
+                    <img src="../img/shouye-01.jpg" alt="">
+                    <div>
+                        <p class="p1">习近平今日赴大阪参加G20峰会 各界焦点集中在中美元首会晤</p>
+                        <p class="p2">在今次大阪G20峰会上，各界焦点皆集中在中美元首会晤，期待习近平和美国总统特朗普能为解决中美贸易摩擦带来进展。</p>
+                        <p class="p3">中国</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/shouye-02.jpg" alt="">
+                    <div>
+                        <p class="p1">梁志祥吁各方冷静 政府领建制派与反对派坐下商谈</p>
+                        <p class="p2">香港立法会今日（27日）讨论目前社会形势，如何令社会恢复平和。</p>
+                        <p class="p3">港闻</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/shouye-03.jpg"  alt="">
+                    <div>
+                        <p class="p1">美俄相继暂停履行《中导条约》 北约商定多重措施</p>
+                        <p class="p2">在俄美领导人大阪G20峰会间会晤前夕，俄罗斯总统助理乌沙科夫称，美国退出《中导条约》的决定让人深忧。</p>
+                        <p class="p3">国际</p>
+                    </div>
+                </li>
+            </ul>
+            <!--轮播小圆点-->
+            <ul class="slider-btn">
+                <li class="on"></li>
+                <li ></li>
+                <li ></li>
+            </ul>
+            <!--左右按钮-->
+            <a class="prev"  href="javascript:">&lt;</a><!--向左走-->
+            <a class="next"  href="javascript:">&gt;</a><!--向右走-->
+        </div>
+        <script>
+            var img=document.getElementsByClassName("slider-img")[0].getElementsByTagName("li");
+            console.log(img);
+            var btn=document.getElementsByClassName("slider-btn")[0].getElementsByTagName("li");
+            console.log(btn);
+            var prev=document.getElementsByClassName("prev")[0];
+            var next=document.getElementsByClassName("next")[0];
+            var number=0;
+            var timer = null;
+            function mover(num) {
+                for (var c=0;c<btn.length;c++){
+                    img[c].className="";
+                    btn[c].className="";
+                }
+                img[num].className="show";
+                btn[num].className="on";
+            }
+            for(var i=0;i<btn.length;i++){
+                myDot=btn[i];
+                myDot.index= i;
+                myDot.onclick=function () {
+                    number=this.index;
+                    mover(number);
+                }
+            }
+            next.onclick=function () {
+                number++;
+                if(number>=img.length){
+                    number=0;
+                }
+                mover(number);
+            };
+            prev.onclick=function () {
+                number--;
+                if(number<0){
+                    number=img.length-1;
+                }
+                mover(number);
+            };
+
+            timer = setInterval(function () {
+                number++;
+                if(number >= img.length){
+                    number = 0;
+                }
+                mover(number)
+            },3600);
+
+            function moverOver(list){
+                for(var d=0;d<list.length;d++){
+                    list[d].onmouseover = function () {
+                        clearInterval(timer);
+                    };
+                    list[d].onmouseout = function () {
+                        timer = setInterval(function () {
+                            number++;
+                            if(number >= img.length){
+                                number = 0;
+                            }
+                            mover(number)
+                        },3600);
+                    }
+                }
+            }
+            moverOver([document.getElementsByClassName("slider-btn")[0],prev,next]);
+        </script>
+    </div>
+</div>
+<div class="content02">
+    <div id="allocator">
+        <ul id="list">
+            <li><img src="../img/ye-01.jpg" alt="">
+                <p><a href="#">广州“姑姐”</a></p>
+            </li>
+            <li><img src="../img/ye-02.jpg" alt="">
+                <p><a href="#">发挥香港独特优势 稳固金融中心地位</a></p>
+            </li>
+            <li><img src="../img/ye-03.jpg" alt="">
+                <p><a href="#">“绿色大棒”阻吓不了台青登录发展</a></p>
+            </li>
+            <li><img src="../img/ye-04.jpg" alt="">
+                <p><a href="#">乱港派图借G20生事是螳臂当车、蚍蜉撼树！</a></p>
+            </li>
+            <li><img src="../img/ye-05.jpg" alt="">
+                <p><a href="#">勿让警队成磨心 辱警行为须喝止</a></p>
+            </li>
+            <li><img src="../img/ye-06.jpg" alt="">
+                <p><a href="#">香港补上G20这一课还来得及</a></p>
+            </li>
+            <li><img src="../img/ye-07.jpg" alt="">
+                <p><a href="#">有备而来 斗而不破</a></p>
+            </li>
+        </ul>
+        <ul id="pointSelect">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div id="leftSelect">&lt;</div>
+        <div id="rightSelect">&gt;</div>
+    </div>
+    <script>
+        var main = document.getElementById('list'),
+                left = document.getElementById('leftSelect'),
+                right = document.getElementById('rightSelect'),
+                points = document.getElementById('pointSelect').getElementsByTagName('li');
+        var length = 500, number = 0;
+        !function () {
+            for(let i = 0; i < points.length; i++){
+                points[i].style.left = 700 + i * 50 + 'px';
+                points[i].value = i;
+                console.log(points[i].value);
+                points[i].onclick = function(){
+                    pointsInit();
+                    mover2(this.value);
+                }
+            }
+        }();
+        function pointsInit() {for(let item of points){item.style.backgroundColor = 'white'}}
+        function mover2(val) {
+            if(val<0) val = points.length -1;
+            if(val>=points.length) val = 0;
+            number = val;
+            main.style.marginLeft = - number * length + 'px';
+            points[number].style.backgroundColor = 'white';
+        }
+        right.onclick = function () {pointsInit();mover2(number+1);};
+        left.onclick = function () {pointsInit();mover2(number-1);};
+        mover2(0)
+    </script>
+</div>
+<div class="footer" style="background: #f1f1f1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="sY2-t">
+                    <a href="">列表</a>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-2" >
+                        <img src="../img/sy01.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">商务部：RCEP谈判中印双方一直保持积极沟通</h4>
+                        <p >目前，RCEP谈判进入关键阶段，中方与包括印度在内的谈判各方
+                            一直保持着积极的沟通，密集开展各个级别的双边磋商。</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-2" >
+                        <img src="../img/y-2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">第一届中国-非洲经贸博览会开幕 搭建合作新平台</h4>
+                        <p >第一届中国-非洲经贸博览会27日在湖南长沙开幕。
+                            这是落实中非合作“八大行动”的重要举措，
+                            搭建了中非经贸合作的新平台。</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-2" >
+                        <img src="../img/y-3.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">﻿中国暂停进口加拿大肉类产品 专家：事件与孟晚舟案无关</h4>
+                        <p >中国自25日起暂停所有加拿大肉类对华出口，并要求加方进行调查。</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-2" >
+                        <img src="../img/y-4.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">﻿日本三万警力史上最强安保护G20峰会安全 封储物柜禁垃圾桶</h4>
+                        <p >为保证此次G20峰会的安全，日本全国投入多达3万警力，比1995年APEC会议、2016年G7峰会的警备规
+                            模都大，这是在日本召开的国际会议中投入警力人数最多的一次。</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-2" >
+                        <img src="../img/y-5.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">工程界选委及工程师联署：点可以冲击执法者？</h4>
+                        <p >联署发起人之一的工程师学会前会长梁广灏称，发起联署是希望表达沉默大多数的忧虑，避免社会撕裂对香
+                            港造成更大的伤害，“法治是我们的基石，我们点可以冲击执法者?”</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-2" >
+                        <img src="../img/y-6.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">游行结束后起争执 反修例青年涉嫌谋杀六旬老汉</h4>
+                        <p >港岛总区重案组接手调查后，昨日在屯门拘捕该名90后男子，他涉嫌谋杀，现正被扣留调查。</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-2" >
+                        <img src="../img/y-8.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">波音737 MAX飞机又暴缺陷 重飞计划或再度拖后</h4>
+                        <p >美国波音737 MAX飞机的操控系统又暴露出一项缺陷，在模拟测试中，这一缺陷会导致
+                            飞机向下俯冲。报道称，这项测试或将再度拖后波音737 MAX重飞的计划。</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-2" >
+                        <img src="../img/xiao2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">独家报道丨缺德！自助洗衣店违规洗臭鞋</h4>
+                        <p >本港房屋愈起愈细，难容纳大型家电，令自助洗衣店
+                            愈开愈多，几乎“梗有一间喺左近”，惟网上经常有人投诉
+                            ，目睹缺德客人违规洗内发现可疑毛髮，</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-3" >
+                        <img src="../img/x1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">俄罗斯联邦委员会通过暂停履行《中导条约》法案</h4>
+                        <p >俄罗斯联邦委员会在26日的会议上，通过了
+                            暂停履行《中导条约》法案。目前，法案已交由俄总统普京签署。</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+                <div class="row sY2">
+                    <div class="col-lg-4 col-md-4 col-sm-4 sY2-3" >
+                        <img src="../img/x3.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8" >
+                        <h4 style="font-weight: bold">香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                        <p>香港金融管理局(金管局)21日公布的统计资料显示，香港今年首季储值支付工具总交易量约
+                            为16亿宗，总交易金额为475亿港元。</p>
+                        <p class="sY2-p"><a href="">国际经济</a>&nbsp;&nbsp;2019-06-27 20:53</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div style="height: 20px;width: 100px;margin-bottom: 20px;margin-left: 20px;">
+                    <p style="font-size: 20px">大公视频</p>
+                </div>
+                <div class="left-img" >
+                    <img src="../img/da1.jpg" alt="" class="left-img-1"/>
+                </div>
+                <div class="p01" >
+                    <p href="">
+                        林郑为修例风波诚挚道歉 希望未来做得更好
+                    </p>
+                </div>
+                <div class="sY1">
+                    <div class="row sY1-1">
+                        <div class="col-lg-5 col-md-5 col-sm-5" >
+                            <img src="../img/x3.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-7" >
+                            <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                            <p >2019-06-15 18:00</p>
+                        </div>
+                    </div>
+                    <div class="row sY1-1">
+                        <div class="col-lg-5 col-md-5 col-sm-5" >
+                            <img src="../img/b-2.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-7" >
+                            <h4>中国香港+日本+跆拳道=井川雪奈</h4>
+                            <p >2019-06-15 18:00</p>
+                        </div>
+                    </div>
+                    <div class="row sY1-1">
+                        <div class="col-lg-5 col-md-5 col-sm-5" >
+                            <img src="../img/b-1.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-7" >
+                            <h4>林郑：暂缓修例 以开放态度全面聆听意见</h4>
+                            <p >2019-06-15 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sY3">
+                    <div style="height: 20px;width: 100px;margin-bottom: 20px;margin-left: 20px;">
+                        <p style="font-size: 20px">阅读排行</p>
+                    </div>
+                    <div class="sY3-1">
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p6">1</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p6">2</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p6">3</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p1">4</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p1">5</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p1">6</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p1">7</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p1">8</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p1">9</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                        <div class="row sY3-1-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2" >
+                                <p class="sY3-p1">10</p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 p5" >
+                                <h4>香港首季储值支付工具总交易16亿宗 交易额475亿港元</h4>
+                                <p >2019-06-15 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row foot">
+            <div class="foot-a">
+                <ul class="nav nav-tabs" style="font-size: 18px;color: black">
+                    <li class="active"><a href="#first" data-toggle="tab" >大公宗教</a></li>
+                    <li><a href="#second" data-toggle="tab">大公国学</a></li>
+                    <li><a href="#third" data-toggle="tab">TOP体育</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="first">
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="left-img" >
+                            <img src="../img/f-1.jpg" alt="" class="left-img-1"/>
+                        </div>
+                        <div class="p01"  style="margin-top: -50px">
+                            <p href="">
+                                【三同书院专题】禅者大信-苏军敬获得中华文化玄奘奖文化创新奖
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="left-img" >
+                            <img src="../img/f-2.jpg" alt="" class="left-img-1"/>
+                        </div>
+                        <div class="p01" style="margin-top: -50px">
+                            <p href="">
+                                《星云大师全集》简体中文版新书在南京隆重发布
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="left-img" >
+                            <img src="../img/f-3.jpg" alt="" class="left-img-1"/>
+                        </div>
+                        <div class="p01" style="margin-top: -50px">
+                            <p href="">
+                                和鸣偕老：民生书法敬老屋书法展在京开幕
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="second">
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="left-img" >
+                            <img src="../img/xin4.jpg" alt="" class="left-img-1"/>
+                        </div>
+                        <div class="p01"  style="margin-top: -50px">
+                            <p href="">
+                                中国佛教协会在京庆祝2019年佛诞节：促进文明交流互鉴
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="left-img" >
+                            <img src="../img/xin5.jpg" alt="" class="left-img-1"/>
+                        </div>
+                        <div class="p01" style="margin-top: -50px">
+                            <p href="">
+                                江西省佛协召开会长会议 制定坚持佛教中国化方向五年规划
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="left-img" >
+                            <img src="../img/xin6.png" alt="" class="left-img-1"/>
+                        </div>
+                        <div class="p01" style="margin-top: -50px">
+                            <p href="">
+                                数字中国峰会：“数字佛教”向世界展示中国的文化自信
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="third">
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="left-img" >
+                            <img src="../img/xin01.jpg" alt="" class="left-img-1"/>
+                        </div>
+                        <div class="p01"  style="margin-top: -50px">
+                            <p href="">
+                               大公网主办2018香港（屯门）国际半程马拉松
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="left-img" >
+                            <img src="../img/xin2.jpg" alt="" class="left-img-1"/>
+                        </div>
+                        <div class="p01" style="margin-top: -50px">
+                            <p href="">
+                                大公网主办2017香港(屯门)国际半程马拉松
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="left-img" >
+                            <img src="../img/xin3.jpg" alt="" class="left-img-1"/>
+                        </div>
+                        <div class="p01" style="margin-top: -50px">
+                            <p href="">
+                                中国长白山国际林海雪地马拉松节
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content09">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 content09-R">
+                <ul style="list-style: none" class="ul">
+                    <li><h4><a href="" style="text-decoration:none">新闻</a></h4></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">中国</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">港闻</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">两岸</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">国际</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">军事</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">大公访谈</a></li>
+                </ul>
+                <ul style="list-style: none" class="ul">
+                    <li><h4><a href="" style="text-decoration:none">评论</a></h4></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">社评</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">北京观察</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">隔海观澜</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">纵横谈</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">点击香江</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">热点冷评</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">大公评论</a></li>
+                </ul>
+                <ul style="list-style: none" class="ul">
+                    <li><h4><a href="" style="text-decoration:none">影像</a></h4></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">大公视频</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">浮世荟</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">遇见</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">大公图片故事</a></li>
+                </ul>
+                <ul style="list-style: none" class="ul">
+                    <li><h4><a href="" style="text-decoration:none">财经</a></h4></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">中国经济</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">香港财经</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">国际经济</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">经济观察家</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">港股</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">地产</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">商业</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">新经济浪潮</a></li>
+                </ul>
+                <ul style="list-style: none" class="ul">
+                    <li><h4><a href="" style="text-decoration:none">艺文</a></h4></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">大公园</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">小公园</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">书海漫游</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">艺术赏析</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">汲宝斋</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">有料历史</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">文学</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">大公故事</a></li>
+                </ul>
+                <ul style="list-style: none" class="ul">
+                    <li><h4><a href="" style="text-decoration:none">生活</a></h4></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">娱乐</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">体育</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">养生堂</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">遨游</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">电影</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">3C科技</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">驰骋</a></li>
+                </ul>
+                <ul style="list-style: none" class="ul">
+                    <li><h4 class="ul-h4"><a href="" style="text-decoration:none">关于大公网</a></h4></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">法律声明</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">广告服务</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">联络我们</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">LED屏</a></li>
+                    <li class="ul-a"><a href="" style="text-decoration:none">往期回顾</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-9 col-sm-9 content09-L">
+                <div class="content09-L-t">
+                    <p>关注</p>
+                </div>
+                <div class="content09-L-d">
+                    <div class="content09-L-d-1"></div>
+                    <div class="content09-L-d-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p> Copyright © 2018 Takungpao All Rights Reserved
+                <a href="#">京ICP备13049349号&nbsp; </a>
+                <a href="#">京公网安备11010102000014号&nbsp;</a></p>
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+</body>
+</html>
+
+

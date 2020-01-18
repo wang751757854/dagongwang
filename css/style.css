@@ -1,0 +1,124 @@
+.title {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+}
+.title-top {
+  height: 4px;
+  background: #ffa500;
+}
+.title-down {
+  height: 76px;
+}
+.title-down-R {
+  width: 250px;
+  height: 76px;
+  float: left;
+}
+.title-down-R img {
+  margin: 20px 60px;
+  height: 30px;
+  width: 120px;
+}
+.title-down-C {
+  width: 750px;
+  height: 76px;
+  float: left;
+}
+.title-down-C ul {
+  height: 76px;
+}
+.title-down-C ul li :hover {
+  color: #ffa500;
+}
+.title-down-C ul li a {
+  text-align: center;
+  line-height: 40px;
+  width: 90px;
+  height: 76px;
+  font-size: 16px;
+  color: #000000;
+}
+.title-down-C ul li p {
+  width: 250px;
+}
+.title-down-C ul li p span {
+  margin-left: 10px;
+}
+.title-down-C ul li p span a {
+  font-size: 15px;
+}
+.title-down-L {
+  width: 300px;
+  float: left;
+  height: 76px;
+}
+.title-down-L .Lp1 {
+  width: 160px;
+  height: 76px;
+  float: left;
+}
+.title-down-L .Lp1 .p-t {
+  font-size: 12px;
+  color: darkgray;
+  margin: 15px 0 0 10px;
+}
+.title-down-L .Lp1 .p-d {
+  font-size: 12px;
+  margin: 1px 0 0 10px;
+}
+.title-down-L .Lp1 .p-d a {
+  margin-right: 5px;
+  color: grey;
+  text-decoration: none;
+}
+.title-down-L .Lp1 .p-d :hover {
+  color: #ffa500;
+}
+.title-down-L .Lp2 {
+  width: 40px;
+  height: 76px;
+  float: left;
+}
+.title-down-L .Lp2 img {
+  width: 83px;
+  height: 38px;
+  margin: 17px 2px;
+}
+.lb {
+  margin-left: 200px;
+}
+.yx {
+  height: 180px;
+  width: 300px;
+}
+.media-heading {
+  line-height: 30px;
+  font-size: 15px;
+}
+.row .yw {
+  width: 280px;
+  height: 300px;
+  overflow: hidden;
+}
+.row .yw :hover {
+  color: #ffa500;
+}
+.row .yw .yx {
+  transition: all 1s ease;
+}
+.row .yw .yx:hover {
+  transform: scaleY(1) scaleX(1.1);
+}
+.ya {
+  height: 40px;
+  width: 40px;
+  margin-top: -61px;
+}
+.jw2 p {
+  line-height: 60px;
+  bottom: 100px;
+  height: 30px;
+  font-size: 10px;
+  width: 100px;
+}

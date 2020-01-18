@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>艺文</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/ywhc.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <img src="../img/logo_tkp.png" alt="" style="margin-top: 10px">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#navBody">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navBody">
+        <ul class="nav navbar-nav" style="margin-left: 100px">
+            <li><a href="../html/首页.html" style="font-size: 20px">
+                <span class="glyphicon glyphicon-home" style="font-size: 20px"></span>首页</a></li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-globe" style="font-size: 20px"></span>新闻</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/新闻.html"><span class="glyphicon glyphicon-list-alt"></span>国内新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>香港新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>两岸新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>国际新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>军事新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>大公访谈</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-comment" style="font-size: 20px"></span>评论</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/评论.html"><span class="glyphicon glyphicon-list-alt"></span>社会评论</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>北京观察</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>隔海观澜</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>纵横谈</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>军事新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>大公访谈</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-facetime-video" style="font-size: 20px"></span>影像</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/影像.html"><span class="glyphicon glyphicon-list-alt"></span>大公视频</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>浮世荟</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>遇见</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>大公图片故事</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>财经</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/财经.html"><span class="glyphicon glyphicon-list-alt"></span>中国经济</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>香港财经</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>港股</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>国际经济</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>经济观察室</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-send" style="font-size: 20px"></span>艺文</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/艺文.html"><span class="glyphicon glyphicon-list-alt"></span>大公园</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>小公园</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>书海漫游</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>艺术赏析</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>汲宝斋</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>有料历史</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-credit-card" style="font-size: 20px"></span>生活</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/生活.html"><span class="glyphicon glyphicon-list-alt"></span>娱乐</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>体育</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>养生堂</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>遨游</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>电影</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>3C科技</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>驰骋</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li style="margin-left: 20px"><a href="../html/专题.html" style="font-size: 20px"><span class="glyphicon glyphicon-comment" style="font-size: 20px"></span>专题</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="top divider">
+                <div class="img01"><a href=""><img src="../img/艺文/yw01.jpg" alt="" class="img0101"></a></div>
+                <div class="top-bottom">
+                    <h4><a href="">人与事\夜赛龙舟\王 乐</a></h4>
+                    <p>夏季暑热，唯有傍晚夜间方有几分清爽之意，人们也更有兴致走出空调房，去户外看看属于这个时节的热闹——在夜里赛龙舟就是一种有着别致韵味的热闹。</p>
+                    <p><a href="">大公园</a>&nbsp;&nbsp;  大公报 王乐 &nbsp;&nbsp;06-07 03:13</p>
+                </div>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">衣尚\穿出夏日风格\蕙 蕙</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link02">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img02">
+                            <a href=""><img src="../img/艺文/yw02.jpg" alt="" class="img-responsive img0202"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4><a href="">漫条思理\郑辛遥</a></h4>
+                        <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link02">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img02">
+                            <a href=""><img src="../img/艺文/yw03.jpg" alt="" class="img-responsive img0202"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4><a href="">三好集\家庭美妙的时刻\潘明珠</a></h4>
+                        <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">食色\虎皮麵包\判 答</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">﻿书之妙道\直笔与曲笔\邓宝剑</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">瓜园\火星诗\蓬 山</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">普通读者\古希腊的陶罐美吗？\米 哈</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">笔记新说\好记性\陆布衣\米 哈</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">片尾曲\夜景野餐会\克 洋</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">如是我思\读唐诗，有所思\江河水</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link02">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img02">
+                            <a href=""><img src="../img/艺文/yw04.jpg" alt="" class="img-responsive img0202"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4><a href="">閒话烟雨\书法之外\白头翁</a></h4>
+                        <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link02">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img02">
+                            <a href=""><img src="../img/艺文/yw05.jpg" alt="" class="img-responsive img0202"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4><a href="">黛西札记\临别殷殷\李 梦</a></h4>
+                        <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link02">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img02">
+                            <a href=""><img src="../img/艺文/yw06.jpg" alt="" class="img-responsive img0202"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4><a href="">艺苑草\无尽夏\梅 莉</a></h4>
+                        <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">﻿客居人语\广州“姑姐”\姚 船</a></h4>
+                <p><a href="">大公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">“美艳亲王”罗艳卿文武兼擅成影坛佳话</a></h4>
+                <p><a href="">文学</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">大坑舞火龙成国家级非遗优秀保护实践案例</a></h4>
+                <p><a href="">文学</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">江苏海外书画联展庆回归迎国庆</a></h4>
+                <p><a href="">文学</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">负暄集/那些月光/赵 阳</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">红尘记事/泥汤洗萝蔔/慕 秋</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link02">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img02">
+                            <a href=""><img src="../img/艺文/yw07.jpg" alt="" class="img-responsive img0202"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4><a href="">艺加之言/《三王来朝》/王 加</a></h4>
+                        <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">墟里/客居/叶 歌</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">文艺中年/人间蒸发/轻 羽</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">人与岁月/只要平凡/凡 心</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">普通读者/起飞了/米 哈</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">雁南飞/英国电影的良心/杨劲松</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">风陵夜话/走在前头的赞助商/耶 生</a></h4>
+                <p><a href="">小公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link02">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img02">
+                            <a href=""><img src="../img/艺文/yw08.jpg" alt="" class="img-responsive img0202"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4><a href="">香江忆记/小巴能源选择多元化/过来人</a></h4>
+                        <p><a href="">大公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">HK人与事/都市奇景/代 恩</a></h4>
+                <p><a href="">大公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+
+            <div class="link02">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img02">
+                            <a href=""><img src="../img/艺文/yw09.jpg" alt="" class="img-responsive img0202"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4><a href="">文化什锦/宋代士人的文化遊/吴念兹</a></h4>
+                        <p><a href="">大公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link01">
+                <h4><a href="">柳絮纷飞/民宿与品位/小 冰</a></h4>
+                <p><a href="">大公园</a>&nbsp;&nbsp; 大公报 &nbsp;&nbsp;8小时前</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="ph">
+                <div><a href=""><h4>点击排行</h4></a></div>
+                <div><a href=""><p class="p1">1.国台办：坚决反对任何人对香港事务说三道四 </p></a></div>
+                <div><a href=""><p class="p1">2.埃及人见到小龙虾竟不知所措 中国人支招：煎炒</p></a></div>
+                <div><a href=""><p class="p1">3.国民党党内初选政见会 韩国瑜:两岸应属"一国两</p></a></div>
+                <div><a href=""><p>4.美方宣称大陆将干预台湾2020选举 国台办驳斥:</p></a></div>
+                <div><a href=""><p>5.国台办：坚决反对任何人对香港事务说三道四 发</p></a></div>
+                <div><a href=""><p>6.九成在日外国人：需要日本政府提供生活支援</p></a></div>
+                <div><a href=""><p>7.中国传媒大学原党委常委、副校长蔡翔接受审查</p></a></div>
+                <div><a href=""><p>8.外交部：要求英方立即停止干涉香港事务</p></a></div>
+                <div><a href=""><p>9.张建宗：示威活动影响政府运作 吁冷静和平表达</p></a></div>
+                <div><a href=""><p>10.中方重申绝不会同意G20讨论香港问题</p></a></div>
+            </div>
+
+            <div class="ph1">
+                <a href=""><h4>影像</h4></a>
+                <div class="imgtb"><a href=""><img src="../img/财经/cj02.jpg" alt="" class="imgtb01"></a></div>
+                <div class="panel-group" id="pFather">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl" data-toggle="collapse" data-parent="#pFather"><div><p class="p1">
+                                淘宝主播薇娅在北京晨跑 其实为了山区孩子的跑道 阿里又做体育公益</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl">
+                            <div class="panel-body">
+                                <div><a href=""><p>三代人垦荒种谷子</p></a></div>
+                                <div><a href=""><p>生而破界-ARCFOX品牌之夜</p></a></div>
+                                <div><a href=""><p>“2019年林芝市第十七届桃花节”大峡谷会场开幕</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl05" data-toggle="collapse" data-parent="#pFather"><div><p class="p1">
+                               天才或小丑？英首相热门人选约翰逊将面对世界检验</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl05">
+                            <div class="panel-body">
+                                <div><a href=""><p>在英国执政党保守党党魁暨下任首相的竞争中，</p></a></div>
+                                <div><a href=""><p>前外交大臣鲍里斯·约翰逊被视作最热门人选。</p></a></div>
+                                <div><a href=""><p>不修边幅的形象以及未经思索的发言让他充满争议</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl06" data-toggle="collapse" data-parent="#pFather"><div><p class="p1">
+                                港撑警大会周日举行 何君尧：化戾气为正能量</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl06">
+                            <div class="panel-body">
+                                <div><a href=""><p>大公文汇全媒体记者李斯哲报道：</p></a></div>
+                                <div><a href=""><p>近日香港因修订《逃犯条例》导致多次大型示威</p></a></div>
+                                <div><a href=""><p>有警员在执行职务时遭受袭击受伤</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ph1">
+                <a href=""><h4>财经</h4></a>
+                <div class="imgtb"><a href=""><img src="../img/艺文/yw11.jpg" alt="" class="imgtb01"></a></div>
+                <div class="panel-group" id="pFather01">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl01" data-toggle="collapse" data-parent="#pFather01"><div><p class="p1">
+                                外交部回应美威胁加征额外关税:美方威胁吓唬不了中国人民</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl01">
+                            <div class="panel-body">
+                                <div><a href=""><p>特朗普发动贸易战久拖不决</p></a></div>
+                                <div><a href=""><p>洞察港澳台及外籍人士金融生活痛点</p></a></div>
+                                <div><a href=""><p>线上智慧停车+线下全资产运营</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl08" data-toggle="collapse" data-parent="#pFather01"><div><p class="p1">
+                                证监会：近年来操纵市场“老鼠仓”违法犯罪行为有新变化</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl08">
+                            <div class="panel-body">
+                                <div><a href=""><p>中新网6月28日电 28日下午，最高人民法院就证券</p></a></div>
+                                <div><a href=""><p>两部司法解释举行发布会。会上，中国证监会</p></a></div>
+                                <div><a href=""><p>主任程合红表示，近年来</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl09" data-toggle="collapse" data-parent="#pFather01"><div><p class="p1">
+                                外交部回应美威胁加征额外关税:美方威胁吓唬不了中国人民</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl09">
+                            <div class="panel-body">
+                                <div><a href=""><p>特朗普发动贸易战久拖不决</p></a></div>
+                                <div><a href=""><p>洞察港澳台及外籍人士金融生活痛点</p></a></div>
+                                <div><a href=""><p>线上智慧停车+线下全资产运营</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ph1">
+                <a href=""><h4>评论</h4></a>
+                <div class="imgtb"><a href=""><img src="../img/财经/cj19.jpg" alt="" class="imgtb01"></a></div>
+                <div class="panel-group" id="pFather02">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl02" data-toggle="collapse" data-parent="#pFather02"><div><p class="p1">
+                                教育茶餐厅\政治狂飙 警察受罪\何汉权</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl02">
+                            <div class="panel-body">
+                                <div><a href=""><p>逃犯移交：权利与责任（上）/江乐士</p></a></div>
+                                <div><a href=""><p>外交组合拳为G20峰会蓄力</p></a></div>
+                                <div><a href=""><p>焦点关注\杨岳桥“欲盖弥彰”\孔兴洲</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl10" data-toggle="collapse" data-parent="#pFather02"><div><p class="p1">
+                                教育茶餐厅\政治狂飙 警察受罪\何汉权</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl10">
+                            <div class="panel-body">
+                                <div><a href=""><p>逃犯移交：权利与责任（上）/江乐士</p></a></div>
+                                <div><a href=""><p>外交组合拳为G20峰会蓄力</p></a></div>
+                                <div><a href=""><p>焦点关注\杨岳桥“欲盖弥彰”\孔兴洲</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl11" data-toggle="collapse" data-parent="#pFather02"><div><p class="p1">
+                                教育茶餐厅\政治狂飙 警察受罪\何汉权</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl11">
+                            <div class="panel-body">
+                                <div><a href=""><p>逃犯移交：权利与责任（上）/江乐士</p></a></div>
+                                <div><a href=""><p>外交组合拳为G20峰会蓄力</p></a></div>
+                                <div><a href=""><p>焦点关注\杨岳桥“欲盖弥彰”\孔兴洲</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ph1">
+                <a href=""><h4>艺文</h4></a>
+                <div class="imgtb"><a href=""><img src="../img/财经/cj20.jpg" alt="" class="imgtb01"></a></div>
+                <div class="panel-group" id="pFather03">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl03" data-toggle="collapse" data-parent="#pFather03"><div><p class="p1">
+                                漫条思理\郑辛遥</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl03">
+                            <div class="panel-body">
+                                <div><a href=""><p>三好集\家庭美妙的时刻\潘明珠</p></a></div>
+                                <div><a href=""><p>閒话烟雨\书法之外\白头翁</p></a></div>
+                                <div><a href=""><p>黛西札记\临别殷殷\李 梦</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl13" data-toggle="collapse" data-parent="#pFather03"><div><p class="p1">
+                                漫条思理\郑辛遥</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl13">
+                            <div class="panel-body">
+                                <div><a href=""><p>三好集\家庭美妙的时刻\潘明珠</p></a></div>
+                                <div><a href=""><p>閒话烟雨\书法之外\白头翁</p></a></div>
+                                <div><a href=""><p>黛西札记\临别殷殷\李 梦</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a href="#pChildl12" data-toggle="collapse" data-parent="#pFather03"><div><p class="p1">
+                                漫条思理\郑辛遥</p></div></a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="pChildl12">
+                            <div class="panel-body">
+                                <div><a href=""><p>三好集\家庭美妙的时刻\潘明珠</p></a></div>
+                                <div><a href=""><p>閒话烟雨\书法之外\白头翁</p></a></div>
+                                <div><a href=""><p>黛西札记\临别殷殷\李 梦</p></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bottom">
+        <a href="">关于大公网&nbsp;</a>
+        <a href="">法律声明&nbsp;</a>
+        <a href="">广告服务&nbsp;</a>
+        <a href="">联络我们&nbsp;</a>
+        <p>Copyright © 2018 Takungpao All Rights Reserved&nbsp;
+            <a href="">京ICP备13049349号&nbsp;</a>
+                <a href="">京公网安备11010102000014号</a></p>
+    </div>
+</div>
+</body>
+</html>

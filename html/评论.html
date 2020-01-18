@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1 maxium-scale=1 ,user-scalable=no" charset="UTF-8">
+    <title>评论</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/pl2.css">
+    <script type="text/javascript" src="../js/getClass.js"></script>
+    <script type="text/javascript" src="../js/bbs3.js"></script>
+    <link rel="stylesheet" href="../css/1.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <img src="../img/logo_tkp.png" alt="" style="margin-top: 10px">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#navBody">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navBody">
+        <ul class="nav navbar-nav" style="margin-left: 100px">
+            <li><a href="../html/首页.html" style="font-size: 20px">
+                <span class="glyphicon glyphicon-home" style="font-size: 20px"></span>首页</a></li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-globe" style="font-size: 20px"></span>新闻</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/新闻.html"><span class="glyphicon glyphicon-list-alt"></span>国内新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>香港新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>两岸新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>国际新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>军事新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>大公访谈</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-comment" style="font-size: 20px"></span>评论</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/评论.html"><span class="glyphicon glyphicon-list-alt"></span>社会评论</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>北京观察</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>隔海观澜</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>纵横谈</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>军事新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>大公访谈</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-facetime-video" style="font-size: 20px"></span>影像</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/影像.html"><span class="glyphicon glyphicon-list-alt"></span>大公视频</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>浮世荟</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>遇见</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>大公图片故事</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>财经</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/财经.html"><span class="glyphicon glyphicon-list-alt"></span>中国经济</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>香港财经</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>港股</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>国际经济</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>经济观察室</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-send" style="font-size: 20px"></span>艺文</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/艺文.html"><span class="glyphicon glyphicon-list-alt"></span>大公园</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>小公园</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>书海漫游</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>艺术赏析</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>汲宝斋</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>有料历史</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-credit-card" style="font-size: 20px"></span>生活</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/生活.html"><span class="glyphicon glyphicon-list-alt"></span>娱乐</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>体育</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>养生堂</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>遨游</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>电影</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>3C科技</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>驰骋</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li style="margin-left: 20px"><a href="../html/专题.html" style="font-size: 20px"><span class="glyphicon glyphicon-comment" style="font-size: 20px"></span>专题</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="box-left">
+                <div class="shouye"><p>首页 > 评论</p></div>
+                <div class="box-top">
+
+                    <img src="../img/评论.01.jpg" alt="" class="img1">
+                </div>
+                <div class="box-bottom">
+                    <h4><a href="#">反修例放生陈同佳 “黑衣游行”令人失望</a></h4>
+                    <p class="p1">“黑衣游行”是令人不满和失望的，政治取向代替了专业判断，政治需要凌驾于法律公义之上。</p>
+                    <p class="p2"><a href="#">社评</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;06-07 03:02</p>
+                </div>
+            </div>
+            <div class="jx">
+                <h4><a href="#">﻿北京观察：有备而来 斗而不破</a></h4>
+                <p class="p1">　　即将在大阪G20峰会期间举行的习特会，受到全球关注，热度超过了去年12月布宜诺斯艾利斯那次。因为当时，各方对於中美贸易摩擦休战尚抱</p>
+                <p class="p2"><a href="#">北京观察</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;7小时前</p>
+            </div>
+
+            <div class="jx">
+                <h4><a href="#">隔海观澜：“绿色大棒”阻吓不了台青登陆发展</a></h4>
+                <p class="p1">“绿色恐怖”又来了。最近台当局在大陆方面聘请台湾青年担任科技特派员一事上大作文章，约谈16名受聘的台青，要他们交代事件的来龙去脉。</p>
+                <p class="p2"><a href="#">隔海观澜</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+
+            <div class="jx">
+                <h4><a href="#">﻿G20大阪峰会的四个看点/王泰平</a></h4>
+                <p class="p2"><a href="#">大公评论</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+
+            <div class="jx">
+                <h4><a href="#">﻿香港社会必须清醒思考/周八骏</a></h4>
+                <p class="p2"><a href="#">大公评论</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+
+            <div class="jx">
+                <h4><a href="#">﻿阻碍政府运作的全民公敌/郑赤琰</a></h4>
+                <p class="p2"><a href="#">大公评论</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;昨天03:17</p>
+            </div>
+            <div class="jx">
+                <h4><a href="#">﻿﻿民生才是最大的政治/杨华勇</a></h4>
+                <p class="p2"><a href="#">大公评论</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;昨天03:17</p>
+            </div>
+            <div class="jx">
+                <h4><a href="#"> ﻿勿拿紧急服务当谋政治私利筹码/李晓迎</a></h4>
+                <p class="p2"><a href="#">大公评论</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;昨天03:17</p>
+            </div>
+            <div class="jx">
+                <h4><a href="#">点击香江：乱港派图借G20生事是螳臂当车、蚍蜉撼树！</a></h4>
+                <p class="p1">　明天，二十国集团峰会（G20）就将在大阪召开。此次峰会对促进世界各国的金融贸易合作、共同应对经济挑战，具有重要的推动作用。而中国</p>
+                <p class="p2"><a href="#">点击香江</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+
+            <div class="jx">
+                <h4><a href="#">﻿井水集\金融学院助提升竞争力\韦 金</a></h4>
+                <p class="p2"><a href="#">大公评论</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+            <div class="jx">
+                <h4><a href="#">﻿纵横谈：香港补上G20这一课还来得及</a></h4>
+                <p class="p1">　6月28日第14届G20峰会将在大阪举行，全世界的焦点移至日本，世界主要领导人将根据东九区时间参加全球经济协调及治理大会并安排一系列会</p>
+                <p class="p2"><a href="#">纵横谈</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+            <div class="jx">
+                <h4><a href="#">﻿社 评\勿让警队成磨心 辱警行为须喝止</a></h4>
+                <p class="p2"><a href="#">社 评</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+            <div class="jx">
+                <h4><a href="#">台当局逃脱不了棋子的命运</a></h4>
+                <p class="p1">棋子的命运就是任人摆布：呼之则来，挥之则去。台湾在美国的对华战略中就是扮演这样可怜的角色。早前传出华府将向台湾出售总额高达20亿</p>
+                <p class="p2"><a href="#">隔海观澜</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+            <div class="jx">
+                <h4><a href="#">﻿G20中俄印元首会反制美贸战/尹树广</a></h4>
+                <p class="p2"><a href="#">大公评论</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+            <div class="jx">
+                <h4><a href="#">﻿孤臣孽子的夺权野心暴露无遗/陈光南</a></h4>
+                <p class="p2"><a href="#">大公评论</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+            <div class="jx">
+                <h4><a href="#">﻿警察是维护香港法治的基础/顾敏康</a></h4>
+                <p class="p2"><a href="#">大公评论</a>&nbsp;&nbsp;&nbsp;大公报&nbsp;&nbsp;&nbsp;10小时前</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="box-right">
+                <div class="box-right-h3">
+                    <h3>点击排行</h3>
+                </div>
+                <div class="box-right-p">
+                    <div class="box-right-p-a">
+                        <p>1.<a href="">外交部：要求英方立即停止干涉香港事务</a></p>
+                    </div>
+                    <div class="box-right-p-a">
+                        <p>2.<a href="">张建宗：示威活动影响政府运作 吁冷静和平表达</a></p>
+                    </div>
+                    <div class="box-right-p-a">
+                        <p>3.<a href="">中方重申绝不会同意G20讨论香港问题</a></p>
+                    </div>
+                    <div>
+                        <p>4.<a href="">外交部：中方绝不同意G20讨论香港问题</a></p>
+                    </div>
+                    <div>
+                        <p>5.<a href="">﻿点击香江：乱港派图借G20生事是螳臂当车、蚍</a></p>
+                    </div>
+                    <div>
+                        <p>6.<a href="">网站起底警员有人扬言登门搞事 狂徒挑衅再围警</a></p>
+                    </div>
+                    <div>
+                        <p>7.<a href="">游行结束后起争执 反修例青年涉嫌谋杀六旬老汉</a></p>
+                    </div>
+                    <div>
+                        <p>8.<a href="">﻿国台办谴责台当局介入港事务 斥蔡甘当反华势力</a></p>
+                    </div>
+                    <div>
+                        <p>9.<a href="">习近平今日赴大阪参加G20峰会 各界焦点集中在</a></p>
+                    </div>
+                    <div>
+                        <p>10.<a href="">﻿北京观察：有备而来 斗而不破</a></p>
+                    </div>
+                </div>
+                <div class="box-right-h3">
+                    <h3>影像</h3>
+                </div>
+                <div class="box-right-y">
+                    <div class="box-right-y-img">
+                        <img src="../img/评论.02.jpg" alt="">
+                    </div>
+                    <div class="box-right-y-a">
+                        <p><a href="">淘宝主播薇娅在北京晨跑 其实为了山区孩子的跑道 阿里又做体育公益</a></p>
+                    </div>
+                    <div class="box-right-y-p"><p><a href="">三代人垦荒种谷子</a></p></div>
+                    <div class="box-right-y-p"><p><a href="">生而破界-ARCFOX品牌之夜</a></p></div>
+                    <div class="box-right-y-p"><p><a href="">“2019年林芝市第十七届桃花节”大峡谷会场开幕</a></p></div>
+                </div>
+                <div class="box-right-h3">
+                    <h3>财经</h3>
+                </div>
+                <div class="box-right-y">
+                    <div class="box-right-y-img">
+                        <img src="../img/01.jpeg" alt="">
+                    </div>
+                    <div class="box-right-p">
+                        <div class="box-right-p-a">
+                            <p><a href="">特朗普发动贸易战久拖不决 美国经济警报拉响</a></p>
+                        </div>
+                        <div>
+                            <p><a href="">洞察港澳台及外籍人士金融生活痛点 平安银行升级</a></p>
+                        </div>
+                        <div>
+                            <p><a href="">线上智慧停车+线下全资产运营 停车场资产管理展</a></p>
+                        </div>
+                        <div>
+                            <p><a href="">富士康：抛弃华为系谣言 撤离大陆一说是无稽之谈</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-right-h3">
+                    <h3>评论</h3>
+                </div>
+                <div class="box-right-y">
+                    <div class="box-right-y-img">
+                        <img src="../img/评论.03.jpg" alt="">
+                    </div>
+                    <div class="box-right-p">
+                        <div class="box-right-p-a">
+                            <p><a href="">教育茶餐厅\政治狂飙 警察受罪\何汉权</a></p>
+                        </div>
+                        <div>
+                            <p><a href="">逃犯移交：权利与责任（上）/江乐士</a></p>
+                        </div>
+                        <div>
+                            <p><a href="">外交组合拳为G20峰会蓄力</a></p>
+                        </div>
+                        <div>
+                            <p><a href="">焦点关注\杨岳桥“欲盖弥彰”\孔兴洲</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-right-h3">
+                    <h3>艺文</h3>
+                </div>
+                <div class="box-right-y">
+                    <div class="box-right-y-img">
+                        <img src="../img/2.jpg" alt="">
+                    </div>
+                    <div class="box-right-p">
+                        <div class="box-right-p-a">
+                            <p><a href="">漫条思理\郑辛遥</a></p>
+                        </div>
+                        <div>
+                            <p><a href="">三好集\家庭美妙的时刻\潘明珠</a></p>
+                        </div>
+                        <div>
+                            <p><a href="">閒话烟雨\书法之外\白头翁</a></p>
+                        </div>
+                        <div>
+                            <p><a href="">黛西札记\临别殷殷\李 梦</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="q">
+<ul id="contentList">
+    <li>
+        <h3> 标题：<span class="msgTitle">留言标题</span> 留言人姓名：<span class="userName">留言人姓名</span> 留言时间：<span class="msgDate">留言时间</span></h3>
+        <div class="msgContent">
+            留言内容
+        </div>
+    </li>
+</ul>
+<form id="fm1">
+    <h3><a href="#">Top</a>发表留言</h3>
+    <label>留言标题：<input type="text" id="msgTitle" /></label>
+    <label>您的姓名：<input type="text" id="userName" /></label>
+    <label>留言内容：         <textarea id="msgContent"></textarea></label>
+    <input type="submit" value="提交" id="submitButton" />
+</form>
+</div>
+<div class="s">
+    <div class="p">
+        <div class="panel-heading">
+            <a href="#pChild1" data-toggle="collapse" style="background:whitesmoke" data-parent="#pFather" class="list-group-item">最新留言<span class="badge">12</span></a>
+        </div>
+        <div class="panel-collapse collapse" id="pChild1">
+            <div class="panel-body">
+                留言</br>
+                留言</br>
+                留言</br>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="panel-heading">
+            <a href="#pChild2" data-toggle="collapse" style="background:lightslategrey" data-parent="#pFather" class="list-group-item">已读留言<span class="badge">6</span></a></a>
+        </div>
+        <div class="panel-collapse collapse" id="pChild2">
+            <div class="panel-body">
+                留言</br>
+                留言</br>
+                留言</br>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="panel-heading">
+            <a href="#pChild3" data-toggle="collapse" style="background:lightgray" data-parent="#pFather" class="list-group-item">待处理留言<span class="badge">12</span></a>
+        </div>
+        <div class="panel-collapse collapse" id="pChild3">
+            <div class="panel-body">
+                留言</br>
+                留言</br>
+                留言
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="panel-heading">
+            <a href="#pChild4" data-toggle="collapse" style="background:gray" data-parent="#pFather" class="list-group-item">过期留言<span class="badge">2</span></a>
+        </div>
+        <div class="panel-collapse collapse" id="pChild4">
+            <div class="panel-body">
+                留言</br>
+                留言</br>
+                留言
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <a href="#">关于大公网&nbsp;</a>
+    <a href="#">法律声明&nbsp;</a>
+    <a href="#">广告服务&nbsp;</a>
+    <p> Copyright © 2018 Takungpao All Rights Reserved
+        <a href="#">京ICP备13049349号&nbsp; </a>
+        <a href="#">京公网安备11010102000014号&nbsp;</a></p>
+</div>
+</body>
+</html>

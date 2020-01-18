@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>影像</title>
+    <link rel="stylesheet" href="../css/影像.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+<body>
+
+<!----------------------------------------轮播开始--------------------------------------------------------->
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <img src="../img/logo_tkp.png" alt="" style="margin-top: 10px">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#navBody">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navBody">
+        <ul class="nav navbar-nav" style="margin-left: 100px">
+            <li><a href="../html/首页.html" style="font-size: 20px">
+                <span class="glyphicon glyphicon-home" style="font-size: 20px"></span>首页</a></li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-globe" style="font-size: 20px"></span>新闻</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/新闻.html"><span class="glyphicon glyphicon-list-alt"></span>国内新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>香港新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>两岸新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>国际新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>军事新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>大公访谈</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-comment" style="font-size: 20px"></span>评论</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/评论.html"><span class="glyphicon glyphicon-list-alt"></span>社会评论</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>北京观察</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>隔海观澜</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>纵横谈</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>军事新闻</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>大公访谈</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-facetime-video" style="font-size: 20px"></span>影像</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/影像.html"><span class="glyphicon glyphicon-list-alt"></span>大公视频</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>浮世荟</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>遇见</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>大公图片故事</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>财经</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/财经.html"><span class="glyphicon glyphicon-list-alt"></span>中国经济</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>香港财经</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>港股</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>国际经济</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>经济观察室</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-send" style="font-size: 20px"></span>艺文</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/艺文.html"><span class="glyphicon glyphicon-list-alt"></span>大公园</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>小公园</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>书海漫游</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>艺术赏析</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>汲宝斋</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>有料历史</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown" style="margin-left: 20px"><a href="" data-toggle="dropdown" style="font-size: 20px">
+                <span class="glyphicon glyphicon-credit-card" style="font-size: 20px"></span>生活</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/生活.html"><span class="glyphicon glyphicon-list-alt"></span>娱乐</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href=""><span class="glyphicon glyphicon-globe"></span>体育</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>养生堂</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-align-center"></span>遨游</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>电影</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-globe"></span>3C科技</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-flag"></span>驰骋</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li style="margin-left: 20px"><a href="../html/专题.html" style="font-size: 20px"><span class="glyphicon glyphicon-comment" style="font-size: 20px"></span>专题</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+
+
+
+<div class="container">
+    <div class="jumbotron picT" style="background:url(../img/sh53.jpg); width: 1000px;height: 350px;margin: 0 auto">
+    </div>
+</div>
+
+
+
+<div class="lb container">
+    <div>
+        <h2>最新视频</h2>
+    </div>
+    <div class="navbar-form">
+        <div class="row">
+            <div class="yw col-lg-3">
+                    <div class="media-left">
+                        <img class="yx" src="../img/影像.jpg" alt="">
+                        <img class="ya" src="../img/影像下标.PNG" alt="">
+                    </div>
+                    <h4 class="media-heading"><a href="">林郑为修例风波诚挚道歉 希望未来做得更好</a></h4>
+                    <p><a href="">大公视频  大公文汇全媒体  06-18 18:57</a></p>
+                </div>
+            <div class="yw col-lg-3">
+                    <div class="media-left">
+                        <img class="yx" src="../img/影像12.jpg" alt="">
+                        <img class="ya" src="../img/影像下标.PNG" alt="">
+                    </div>
+                    <h4 class="media-heading"><a href="">中国香港+日本+跆拳道=井川雪奈</a></h4>
+                    <p style="line-height: 74px"><a href="">大公视频  大公文汇全媒体  06-18 18:57</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                        <img class="yx" src="../img/影像11.jpg" alt="">
+                        <img class="ya" src="../img/影像下标.PNG" alt="">
+                    <h4 class="media-heading"><a href="">林郑：暂缓修例 以开放态度全面聆听意见</a></h4>
+                    <p><a href="">大公视频    大公网    06-18 18:57</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                        <img class="yx" src="../img/影像08.jpg" alt="">
+                        <img class="ya" src="../img/影像下标.PNG" alt="">
+                    <h4 class="media-heading" style="line-height: 40px"><a href="">暴徒们，说好的和平示威呢？</a></h4>
+                    <p style="line-height: 60px"><a href="">大公视频    大公网    06-18 18:57</a></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="navbar-form">
+        <div class="row">
+            <div class="yw col-lg-3">
+                <div class="media-left">
+                    <img class="yx" src="../img/影像09.jpg" alt="">
+                    <img class="ya" src="../img/影像下标.PNG" alt="">
+                </div>
+                <h4 class="media-heading"><a href="">林郑：谴责暴力冲击 呼吁和平解决问题</a></h4>
+                <p><a href="">大公视频  大公文汇全媒体  06-18 18:57</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                <div class="media-left">
+                    <img class="yx" src="../img/影像14.jpg" alt="">
+                    <img class="ya" src="../img/影像下标.PNG" alt="">
+                </div>
+                <h4 class="media-heading"><a href="">港示威者围堵立法会阻修例</a></h4>
+                <p style="line-height: 80px"><a href="">大公视频  大公文汇全媒体  06-18 18:57</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                <img class="yx" src="../img/影像07.jpg" alt="">
+                <img class="ya" src="../img/影像下标.PNG" alt="">
+                <h4 class="media-heading"><a href="">首座中俄合建跨境公路大桥合龙</a></h4>
+                <p style="line-height: 80px"><a href="">大公视频  大公文汇全媒体  06-18 18:57</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                <img class="yx" src="../img/影像06.jpg" alt="">
+                <img class="ya" src="../img/影像下标.PNG" alt="">
+                <h4 class="media-heading"><a href="">修订逃犯条例｜特首霸气反问：谁令我们少了六个星期？</a></h4>
+                <p><a href="">大公视频  大公文汇全媒体  06-18 18:57</a></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="navbar-form">
+        <div class="row">
+            <div class="yw col-lg-3">
+                <div class="media-left">
+                    <img class="yx" src="../img/影像13.jpg" alt="">
+                    <img class="ya" src="../img/影像下标.PNG" alt="">
+                </div>
+                <h5 class="media-heading"><a href="">淘宝主播薇娅在北京晨跑 其实为了山区孩子的跑道 阿里又做体育公益</a></h5>
+                <p class="zt"><a href="">浮世荟06-23 17:41</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                <div class="media-left">
+                    <img class="yx" src="../img/影像05.jpg" alt="">
+                    <img class="ya" src="../img/影像下标.PNG" alt="">
+                </div>
+                <h4 class="media-heading"><a href="">三代人垦荒种谷子</a></h4>
+                <p class="zt" style="margin-top: 36px"><a href="">浮世荟06-23 17:41</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                <img class="yx" src="../img/影像15.jpg" alt="">
+                <img class="ya" src="../img/影像下标.PNG" alt="">
+                <h4 class="media-heading"><a href="">骑上毛驴游太行</a></h4>
+                <p class="zt" style="margin-top: 36px"><a href="">浮世荟06-23 17:41</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                <img class="yx" src="../img/影像16.jpg" alt="">
+                <img class="ya" src="../img/影像下标.PNG" alt="">
+                <h4 class="media-heading"><a href="">太行深处王金庄</a></h4>
+                <p class="zt" style="line-height: 60px"><a href="">浮世荟06-23 17:41</a></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="navbar-form">
+        <div class="row">
+            <div class="yw col-lg-3">
+                <div class="media-left">
+                    <img class="yx" src="../img/影像17.jpg" alt="">
+                    <img class="ya" src="../img/影像下标.PNG" alt="">
+                </div>
+                <h4 class="media-heading"><a href="">王金庄梯田的春播方式</a></h4>
+                <p class="zt"><a href="">浮世荟05-14 15:30</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                <div class="media-left">
+                    <img class="yx" src="../img/影像18.jpg" alt="">
+                    <img class="ya" src="../img/影像下标.PNG" alt="">
+                </div>
+                <h4 class="media-heading"><a href="">雄安匠人杨丙军《芦苇春色》</a></h4>
+                <p class="zt"><a href="">浮世荟05-14 15:30</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                <img class="yx" src="../img/影像19.jpg" alt="">
+                <img class="ya" src="../img/影像下标.PNG" alt="">
+                <h4 class="media-heading"><a href="">春游白洋淀（顾大鹏摄）</a></h4>
+                <p class="zt"><a href="">浮世荟05-14 15:30</a></p>
+            </div>
+            <div class="yw col-lg-3">
+                <img class="yx" src="../img/影像04.jpg" alt="">
+                <img class="ya" src="../img/影像下标.PNG" alt="">
+                <h4 class="media-heading"><a href="">生而破界-ARCFOX品牌之夜</a></h4>
+                <p class="zt"><a href="">浮世荟05-14 15:30</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------尾部开始---------------------------------->
+
+<div class="jw container">
+    <p style="text-align:center">关于大公网  法律声明  广告服务  联络我们</p>
+    <p style="text-align:center">Copyright © 2018 Takungpao All Rights Reserved 京ICP备13049349号  京公网安备11010502037337号</p>
+</div>
+</body>
+</html>
